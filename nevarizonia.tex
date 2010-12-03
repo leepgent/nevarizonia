@@ -1,29 +1,40 @@
 % nevarizonia.tex
 % Copyright 2005-2010 Lee Gent (lee@leegent.net)
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8
 
 \documentclass[a5paper,titlepage,11pt]{book}
 %\documentclass[a5paper,titlepage,11pt,draft]{book}
 \usepackage[british]{babel}
-\usepackage{microtype}
-\usepackage{charter}
+\usepackage{libertine}
 \usepackage{graphicx}
 \usepackage[tc]{titlepic}
 \usepackage[a5paper,inner=20mm,outer=15mm,bottom=15mm,top=15mm]{geometry}
 \DeclareGraphicsExtensions{.jpeg,.png,.jpg,}
+
+\defaultfontfeatures{Mapping=tex-text}
 
 \titlepic{\includegraphics[width=\textwidth]{gfx/title}}
 \title{Nevarizonia: An American Road Trip}
 \author{Lee Gent}
 \date{May -- June, 2005}
 
-\usepackage[pdfauthor={Lee Gent},pdftitle={Nevarizonia: An American Road Trip},pdfsubject={Nevarizonia}]{hyperref}
+\usepackage{hyperref}
+\hypersetup{
+  pdfinfo={
+    pdfauthor={Lee Gent},
+    Title={Nevarizonia: An American Road Trip},
+    Subject={Nevarizonia},
+    unicode=true
+  }
+}
 
 \begin{document}
 \frontmatter
 \maketitle
 
 \pagestyle{plain}
-\tableofcontents
+%\tableofcontents
 \section*{A quick note on context}
 This was recorded and partially-written in Summer 2005 by an angry, single, 24-year old male.
 
